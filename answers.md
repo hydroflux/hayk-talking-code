@@ -47,6 +47,8 @@ A column in dependent table will store an independent tables's primary key as a 
 
 A single source of truth refers to coincidences of two objects in a many-to-many relationship. When querying an object to find out about its relations, the single source of truth is consulted instead of any of the related entities themselves.
 
+In information systems design and theory, single source of truth (SSOT) is the practice of structuring information models and associated data schema such that every data element is mastered (or edited) in only one place. Any possible linkages to this data element (possibly in other areas of the relational schema or even in distant federated databases) are by reference only. Because all other locations of the data just refer back to the primary "source of truth" location, updates to the data element in the primary location propagate to the entire system without the possibility of a duplicate value somewhere being forgotten.
+
 ## What is the purpose of the environment.rb file?
 
 An environment.rb file imports all of the libraries and classes that should be available to the program at run time.
@@ -89,6 +91,8 @@ An event fires when an action occurs on a DOM node. These are often user-initiat
 ## What is event bubbling?
 
 When an event fires on a DOM node, it also fires on each of the parents of that DOM node sequentially. Each node can listen for the event and respond in turn, as well as stop the event from continuing to bubble.
+
+When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
 
 ## What is referential transparency?
 
@@ -150,6 +154,8 @@ Cross-origin resource sharing. It's a method for safely allowing browsers to tru
 ## What's the semantic difference between PUT and PATCH?
 
 PUT is for replacing one resource with another, PATCH is for modifying parts of a resource in-place.
+
+The main difference between the PUT and PATCH method is that the PUT method uses the request URI to supply a modified version of the requested resource which replaces the original version of the resource, whereas the PATCH method supplies a set of instructions to modify the resource.
 
 ## What is DRY?
 
